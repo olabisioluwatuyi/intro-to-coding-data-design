@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mystery Box</title>
+    <link rel="stylesheet" href="mystery_box_style.css">
+    <script src="mystery_box_script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>🎁 The Mystery Box</h1>
+        <p class="subtitle">A beautiful little surprise, just for you!</p>
+        <label for="category">Choose your surprise:</label>
+        <select id="category">
+            <option value="random">🎁 Surprise Me!</option>
+            <option value="funny">😂 Make Me Laugh</option>
+            <option value="challenge">⚡ Challenge Me</option>
+            <option value="kind">😊 Make Me Smile</option>
+            <option value="truth">🤔 Truth Time</option>
+            <option value="love">💌 Love Notes</option>
+            <option value="riddle">🧩 Test My Brain</option>
+            <option value="selfcare">🧘🛌 Relax & Recharge</option>
+            <option value="motivation">👍💪 Inspire Me</option>
+            <option value="creativity">🎨 Spark My Creativity</option>
+            <option value="adventure">🌍 Take Me On An Adventure</option>
+            <option value="wildcard">🎲 The Wild Card</option>
+        </select>
+        <button id="giftBox" class="gift-box" type="button">
+            🎁
+        </button>
+        <p id="surpriseMessage">Your surprise is waiting...✨🎉</p>
+        <button id="saveButton" type="button">
+            🤍 Save to Favorites
+        </button>
+        <p class="star-counter">
+            ⭐ Stars collected: <span id="stars">0</span>
+        </p>
+        <button id="resetButton" type="button">
+            🔄️ Start Again
+        </button>
+        <section id="favorites">
+            <h2>💖 My Favorite Surprises</h2>
+            <ul id="favoritesList">
+                <li>Your saved surprises will appear here!</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+            <p> ✨ A little mystery, a little magic, a lot of smiles! ✨ </p>
+            <p>Made with ❤️ by 3ple O</p>
+    </footer>
+</body>
+</html>

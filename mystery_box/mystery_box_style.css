@@ -1,0 +1,112 @@
+body {
+    background-color: #F3E5F5;
+}
+.container {
+    background-color: white;
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
+    text-align: center;
+    box-sizing: border-box;
+
+    h1 {
+        color: #8E44AD;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.subtitle {
+    color: #777777;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+select{
+    background-color: #F8F0FF;
+    color: #6A1B9A;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.gift-box {
+    background-color: transparent;
+    border: none;
+    font-size: 100px;
+    cursor: pointer;
+    padding: 20px;
+    display: block;
+    margin: 20px auto;
+}
+#surpriseMessage {
+    color: #8E44AD;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F8F0FF;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+#saveButton {
+    background-color: #E91E63;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+.star-counter {
+    color: #8E44AD;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFF3CD;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 20px;
+}
+#resetButton {
+    background-color: #9C27B0;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+#favorites {
+    background-color: #FFF0F5;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    border: 2px solid #F8BBD0;
+}
+#favorites h2 {
+    color: #C2185B;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+#favoritesList {
+    color: #7F38AD;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+footer {
+    text-align: center;
+    color: #8E44AD;
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer p {
+    margin: 8px 0;
+}
