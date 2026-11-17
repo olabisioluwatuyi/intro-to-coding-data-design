@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Complaints Exercise - ReDI School</title>
+
+  <!-- normalize.css makes default styles look the same across browsers.
+      Very popular - to use it, uncomment the line below. -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"> -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- EXERCISE: you built this contact page for a customer...
+    ...but your customer is not happy with what you delivered!
+    Fix the code in index.html and style.css so every complaint is solved:
+
+    1. The heading text shall be "Let's create something together."
+    2. The background color of the body is not white, it's color code f3dcb9.
+    3. The navigation items shall group at the far left and far right side.
+    4. The width of the input fields shall be max 30rem.
+    5. The breakpoint from desktop to tablet shall be at 1024px.
+
+    Tip: open DevTools (F12) and try your fix live before you change the file.
+    The fixed version is in the solution/ folder. -->
+
+<body>
+
+  <!-- NAVIGATION: the logo on one side, the links on the other side -->
+  <nav>
+    <a href="#home" class="nav-logo">Luminary</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- CONTACT SECTION: 2 columns on desktop (info + form), 1 column on smaller screens -->
+  <section id="contact" class="contact-section">
+
+    <!-- Left column: heading and phone number -->
+    <div class="contact-info">
+      <h2 class="contact-title">Let's create something together.</h2>
+
+      <div class="contact-detail">
+        <h3>Phone</h3>
+        <p>+1 (212) 555 0194</p>
+      </div>
+    </div>
+
+    <!-- Right column: the form.
+        Each .form-group holds one label + one field, stacked on top of each other. -->
+    <form class="contact-form">
+
+      <div class="form-group">
+        <label for="user-name">Full Name</label>
+        <input type="text" id="user-name" name="user-name" placeholder="Jane Smith" required>
+      </div>
+
+      <div class="form-group">
+        <label for="user-email">Email Address</label>
+        <input type="email" id="user-email" name="user-email" placeholder="jane@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="user-message">Project Brief</label>
+        <textarea id="user-message" name="user-message" rows="5" placeholder="Tell us about your project..."></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </section>
+
+</body>
+
+</html>
