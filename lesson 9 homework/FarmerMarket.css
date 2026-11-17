@@ -1,0 +1,132 @@
+/* Reset: remove the browser's default spacing on every element.
+   box-sizing: border-box keeps padding and border inside an element's width. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVIGATION
+   display: flex puts the logo and the links in one row.
+   align-items: center lines them up vertically.
+   justify-content: space-around shares the free space around them. */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: darkgrey;
+}
+
+nav img {
+  width: 5rem;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav .link a {
+  margin: 1rem;
+}
+
+/* HOME */
+.home {
+  margin: 1rem;
+}
+
+/* Picture as a background image.
+   vw = % of the screen width, so the picture grows and shrinks with the window. */
+.home_img {
+  width: 80vw;
+  height: 50vw;
+  margin: 1rem auto; /* auto left/right = centered */
+  background-image: url("./image/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* MENU
+   On mobile the cards are stacked (column). The media query below puts them in a row. */
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+/* Shared look of every card */
+.card {
+  /* position: relative = the overlay text is positioned inside THIS box */
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  margin: 1rem;
+  border: 0.25rem solid lightgray;
+  border-radius: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Which picture each card shows */
+.farmer {
+  background-image: url("./image/farmer.jpg");
+}
+
+.cow {
+  background-image: url("./image/cow.jpg");
+}
+
+/* Text on top of the picture.
+   position: absolute + bottom: 2rem = 2rem above the bottom edge of the .card */
+.overlay {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* black, 50% see-through */
+}
+
+/* CONTACT: stack the fields on top of each other, centered */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+footer {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: darkgrey;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+/* MEDIA QUERY: these rules only apply on screens 600px wide or more.
+   Mobile first: the rules above are for phones, this block changes them for bigger screens. */
+@media screen and (min-width: 600px) {
+  /* Make paragraphs a bit bigger */
+  p {
+    font-size: 1.25rem;
+  }
+
+  /* Cards side by side instead of stacked (display: flex is already set above) */
+  .card-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* Picture beside the text */
+  .home {
+    display: flex;
+  }
+
+  .home_text {
+    width: 50vw;
+    margin: 1rem;
+  }
+}

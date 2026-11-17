@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmerMarket - ReDI School</title>
+
+  <!-- normalize.css makes default styles look the same across browsers.
+      Very popular - to use it, uncomment the line below. -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"> -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION: logo on one side, links on the other (see "nav" in style.css) -->
+  <nav>
+    <!-- Picture way 1: an <img> tag in the HTML -->
+    <img src="./image/logo.jpg" alt="FarmerMarket logo">
+
+    <!-- Each href="#..." jumps to the element with that id further down the page -->
+    <div class="link">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME: picture and text, side by side on bigger screens (see the media query) -->
+  <section class="home" id="home">
+    <!-- Picture way 2: an empty <div> with a background-image in the CSS -->
+    <div class="home_img"></div>
+
+    <div class="home_text">
+      <h1>FarmerMarket</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam
+        minus rem voluptas quaerat aperiam itaque dicta corrupti, libero iure.
+        Facilis dicta fuga suscipit harum molestias totam deserunt qui.
+        Voluptatem, voluptate! Porro reiciendis perspiciatis voluptates sunt
+        eaque. Ut iste hic ipsam, enim tenetur qui nisi aspernatur, facilis
+        quidem optio nobis animi amet earum distinctio fuga quod, sunt
+        reiciendis doloribus nostrum laborum sed. Non ipsa praesentium
+        quibusdam ab vero dolores laudantium sunt, delectus illum debitis
+        accusamus ipsum corrupti aliquid! Quis, odio quisquam obcaecati
+        aliquid, molestiae cupiditate libero consectetur laboriosam, natus
+        excepturi voluptate. Ipsa itaque reiciendis eum perspiciatis vero,
+        inventore natus? Assumenda.
+      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- MENU: two picture cards -->
+  <section class="card-box" id="menu">
+    <!-- Each card has 2 classes:
+        "card"   = the shared look (size, border, rounded corners)
+        "farmer" = which picture to show -->
+    <div class="card farmer">
+      <!-- Text placed on top of the picture with CSS positioning -->
+      <p class="overlay">Farmer Robert</p>
+    </div>
+
+    <div class="card cow">
+      <p class="overlay">Cow Alice</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- CONTACT: a small form -->
+  <section class="contact" id="contact">
+    <form>
+      <input type="text" placeholder="Name" aria-label="Name">
+      <!-- type="email": the browser checks the value looks like an email -->
+      <input type="email" placeholder="Email" aria-label="Email">
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <footer>
+    Impressum
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+      laborum omnis dolorem nobis rerum repellendus eveniet. Obcaecati
+      consequuntur iste architecto soluta eius nemo, minima officiis at, iusto
+      nulla magni odio id! Quibusdam voluptate exercitationem accusantium
+      magnam sit! Nulla, fuga accusamus soluta sint ratione earum corrupti
+      dicta odio, omnis, tempora tempore?
+    </p>
+  </footer>
+
+</body>
+
+</html>

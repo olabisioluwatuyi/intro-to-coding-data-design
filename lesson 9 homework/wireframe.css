@@ -1,0 +1,149 @@
+/* global styles */
+* {
+	margin: 0; /* no border to the viewable frame */
+  padding: 0; /* no padding to the viewable frame */
+	box-sizing: border-box;
+  /* border: 1px solid rgb(109, 7, 24); */
+}
+
+h1 {
+  font-family: "Lucida Handwriting";
+}
+
+/* ################################# Navigation Bar ################################# */
+
+header {
+  background-color: orange;
+}
+.home {
+  display: flex; /* apply flexbox */
+  flex-direction: column; /* flexbox item in column */
+  align-items: center; /* items vertically centered */
+  justify-content: space-between; /* left space between containers */
+}
+.topnav {
+  margin: 15px;
+}
+/* Style the links inside the topnav */
+.topnav a {
+  color: #f2f2f2; /* text color white */
+  padding: 14px 16px;
+  text-decoration: none; /* no underline of links */
+  font-size: 26px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; /* text color white */
+  border-radius: 15px;
+}
+/* ################################# SECTION Profile ################################# */
+.profile {
+  background-color: lightblue;
+  padding: 10px;
+  background-image: url("./images/pexels-bg.jpg"); /* get background image */
+  background-repeat: no-repeat; /* only once */
+  background-size: cover; /* cover the container */
+  background-position: center; /* position bg in center of picture*/
+  
+  /* acivate line blow to see effect */
+  /* min-height: 600px; */
+}
+.profile_title {
+  text-align: center;
+}
+.box-container {
+  display: flex;
+  flex-direction: column; /* flexbox item in column */
+  align-items: center;
+  justify-content: space-around;
+}
+.box {
+  background-color: MediumSeaGreen;
+  height: auto;
+  min-height: 350px;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+
+
+  /* acivate line blow to see effect */
+  /* width: 70%; */
+}
+
+.box img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+
+.projects h1 {
+    background-color: lavender;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.projects h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    margin: 10px auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* ################################# SECTION Contact ################################# */
+.contact {
+  background-color: tomato;
+  height: 400px;
+  padding: 10px;
+}
+
+*label {
+  font-size: 24px;
+}
+
+
+
+input {
+  font-size: 24px;
+  padding: 5px;
+  margin: 10px;
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  font-size: 24px;
+  padding: 5px;
+}
+
+/* media query to change layout when screen is wider than 880px */
+@media (min-width: 880px) {
+  .profile_title {
+    text-align: left;
+  }
+  .home {
+    flex-direction: row;
+    /* overflow: hidden; */
+  }
+  .box-container {
+    flex-direction: row;
+  }
+}

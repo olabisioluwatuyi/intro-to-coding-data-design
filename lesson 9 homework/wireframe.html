@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Space</title>
+    <link rel="stylesheet" href="wireframe.css">
+  </head>
+
+<!-- CSS Code -->
+  <style>
+ 
+  </style>
+
+<!-- HTML Body -->
+<body>
+  <header>
+    <div class="home" id="home">
+
+      <img src="./images/ReDI_Logo.png" alt="Logo" width="50">
+      
+      <h1>Welcome to my Web Space</h1>
+
+      <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+        <button onclick="alert('you clicked Help 1 from html file')">Help</button>
+        <!-- <button onclick=got_click()>Help</button> -->
+      </div>   
+
+    </div> 
+  </header>
+   
+  <section class="profile" id="profile">
+
+    <h1 class="profile_title">Hello! Welcome to My Little World!<br>
+      <br>
+          I have a background in Biology and a growing passion for technology and web development. I enjoy learning new skills, exploring creative ideas, and challenging myself.                     
+    </h1>
+
+    <div class="box-container">
+      
+      <div class="box">
+        <img src="./images/About_Me.jpg" alt="About Me">
+        <h2>About Me</h2>
+        <p> I am currently developing my programming skills and discovering exciting ways to combine science,
+            technology, and creativity. My journey into web development allows me to combine creativity, problem-solving, and my passion for continuous learning.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="./images/My_Skills.jpg" alt="My Skills">
+        <h2>My Skills</h2>
+        <p>I have a strong background in microbiology, environmental biology, laboratory techniques, scientific research, and data analysis. 
+           My academic experience has helped me develop critical thinking, problem-solving, and analytical skills.
+           I am also expanding my technical skills through web development and programming, including HTML, CSS, JavaScript, and Python. 
+           I enjoy combining my scientific knowledge with creativity and technology to explore new ideas and develop practical solutions.
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="./images/My_Hobbies.jpg" alt="My Hobbies">
+        <h2>My Hobbies</h2>
+        <p>I enjoy cooking and experimenting with recipes from different cultures, exploring new places, and discovering different traditions.
+           I also love reading, listening to music, and learning new things.
+        </p>
+      </div>
+    
+    </div>
+  </section>
+  
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+    <p>Here are some of the projects I have been working on.</p>
+
+    <h2>Savour Treasure</h2>
+    <p>
+        A recipe website featuring delicious dishes
+        from different cultures around the world,
+        including traditional African recipes.
+    </p>
+
+    <h2>The Mystery Box</h2>
+    <p>
+        A fun and interactive project developed using
+        HTML, CSS, and JavaScript. It gives users
+        random surprises, challenges, and messages.
+    </p>
+  </section>
+  
+  <section class="contact" id="contact">
+    <h1>Contact Me</h1>
+    <p>Feel free to get in touch!</p>
+    <form action="" method="get">
+      <label for="name">Your Name:</label><br>
+      <input type="text" name="name" id="name"><br>
+
+      <label for="email"></label>Your E-mail:</label><br>
+      <input type="email" name="email" id="email"><br>
+     
+      <input type="submit" onclick="alert('Message sent')" class="submit" value="Submit">
+      <!-- <input type="button" onclick="alert('Message sent')" class="submit" value="Submit"> -->
+    </form>
+  </section>
+
+  <script src="./wireframe.js"></script>
+</body>
+</html>
